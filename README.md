@@ -90,6 +90,8 @@ set mouse=a
 
 ## 필수 프로그램 
 [Visual Studio Code 다운로드](https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal)
+- Prettier 설치
+- Eslint 설치
 
 [Notion 다운로드](https://www.notion.so/desktop/mac/download)
 
