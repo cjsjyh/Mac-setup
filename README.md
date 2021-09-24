@@ -138,11 +138,13 @@ function seeport() {
     aa = add --all
 ```
 </details>
-[Vim 세팅](https://github.com/amix/vimrc)
-```
-// ~/.vim_runtime/my_configs.vim
+
+[Ultimate Vim 설치](https://github.com/amix/vimrc)
+```bash
+echo "
 set nu
 set mouse=a
+" | sudo tee -a ~/.vim_runtime/my_configs.vim
 ```
 
 ## iTerm2 꾸미기
