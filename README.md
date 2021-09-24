@@ -1,5 +1,5 @@
-## 키보드 한/영 전환(arabinar_elements)
-
+## 키보드 한/영 전환(Karabinar_elements)
+[Karabiner Elements 다운로드](https://karabiner-elements.pqrs.org/)
 - Karabinar: From key: [right-option] To key: [f18]
 - 키보드 > 단축키 >  입력소스 > 이전 입력 소스 선택 >( right-command를 누르면 F18로 설정이 됨)
 - 키보드 > 입력소스 > 한/영키로 ABC 입력소스 전환 해제
