@@ -36,7 +36,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-**~/.zshrc에 추가하기**
+**`~/.zshrc`**
 ```
 plugins=(
   git
@@ -49,7 +49,7 @@ source ~/.zsh_aliases
 PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
 ```
 
-**~/.zsh_aliases
+**`~/.zsh_aliases`**
 ```
 alias desktop="cd ~/Desktop"
 alias download="cd ~/Downloads"
@@ -68,7 +68,7 @@ function seeport() {
 }
 ```
 
-`~/.gitconfig`
+**`~/.gitconfig`**
 ```
 [alias]
     co = checkout
@@ -95,8 +95,9 @@ set mouse=a
 
 [Zoom 다운르도](https://zoom.us/download#client_4meeting)
 
-## Extra
-`brew install fd`
 
 ## Project Setup
 `NVM`
+
+## Extra
+`brew install fd`
