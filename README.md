@@ -56,7 +56,7 @@ plugins=(
 ```bash
 echo "
 source ~/.zsh_aliases
-PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
+PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info) '
 " | sudo tee -a ~/.zshrc
 
 echo "
@@ -103,7 +103,7 @@ plugins=(
 
 // 마지막에
 source ~/.zsh_aliases
-PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
+PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info) '
 ```
 
 **`~/.zsh_aliases`**
@@ -146,8 +146,9 @@ set mouse=a
 ```
 
 ## iTerm2 꾸미기
-[chalkboard 테마 다운로드](https://drive.google.com/file/d/1iWwHFzSWTnuLMKlLg_bk2J7BW1z7uVCR/view?usp=sharing)
-[테마 변경하기](https://ooeunz.tistory.com/21)
+- [chalkboard 테마 다운로드](https://drive.google.com/file/d/1iWwHFzSWTnuLMKlLg_bk2J7BW1z7uVCR/view?usp=sharing)
+- 테마적용하기: Preferences > Profiles > Colors > Color Presets > Import
+- 한글깨짐해결: Preferences > Profiles > Text > Unicode normalization form: `NFC`
 
 ## 필수 프로그램 
 [Visual Studio Code 다운로드](https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal)
