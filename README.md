@@ -24,8 +24,9 @@
 
 // Git output이 새로운 페이지에서 보이는 것을 막아줌
 git config --global pager.branch false
-
-// zsh 설치
+```
+**zsh 설치**
+```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 // zsh-syntax-highlighting
@@ -44,16 +45,22 @@ plugins=(
 )
 ```
 
-**.zshrc 마지막에**
+**~/.zshrc 마지막에**
 ```
 PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
 ```
-
+[Vim 세팅](https://github.com/amix/vimrc)
+```
+// ~/.vim_runtime/my_configs.vim
+set nu
+set mouse=a
+```
 
 [Visual Studio Code 다운로드](https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal)
 
 [Notion 다운로드](https://www.notion.so/desktop/mac/download)
 
+[Zoom 다운르도](https://zoom.us/download#client_4meeting)
 
 ## Alias
 `~/.gitconfig`
