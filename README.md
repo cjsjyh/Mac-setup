@@ -163,7 +163,18 @@ set mouse=a
 
 
 ## Project Setup
-`NVM`
+**NVM 설치**
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+source ~/.zshrc
+nvm install 16
+```
+
+**yarn 설치**
+```
+npm install --global yarn
+```
 
 ## Extra
 `brew install fd`
