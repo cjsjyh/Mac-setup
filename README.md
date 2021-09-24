@@ -28,20 +28,20 @@ echo "{
 ## 터미널 세팅
 [iterm2 다운로드](https://iterm2.com/downloads/stable/latest)
 ```
-// brew 설치
+# brew 설치
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-// Git output이 새로운 페이지에서 보이는 것을 막아줌
+# Git output이 새로운 페이지에서 보이는 것을 막아줌
 git config --global pager.branch false
 ```
 **zsh 설치**
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-// zsh-syntax-highlighting
+# zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-// zsh-autosuggestions
+# zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 **`~/.zshrc`에 추가**
