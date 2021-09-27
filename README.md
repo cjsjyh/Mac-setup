@@ -157,6 +157,7 @@ set mouse=a
 - Prettier 설치
 - Eslint 설치
 - Command Palette > Open Keyboard Shortcuts > Replace (`cmd + h`)
+- Command Palette > install 'code' command in PATH
 
 [Notion 다운로드](https://www.notion.so/desktop/mac/download)
 
