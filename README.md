@@ -1,3 +1,5 @@
+`[OO에 추가] 문구가 없는 경우는 command line에 바로 붙여넣으면 됩니다`
+
 ## 키보드 한/영 전환(Karabinar_elements)
 [Karabiner Elements 다운로드](https://karabiner-elements.pqrs.org/)
 - Karabinar: From key: [right-option] To key: [f18]
