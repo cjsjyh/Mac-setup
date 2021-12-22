@@ -64,6 +64,7 @@ PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info) '
 echo "
 alias desktop="cd ~/Desktop"
 alias download="cd ~/Downloads"
+alias clear='clear && printf "\e[3J"'
 
 alias gs="git status"
 alias gpsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git push --set-upstream origin {}"
