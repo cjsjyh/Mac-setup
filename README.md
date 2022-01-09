@@ -161,6 +161,7 @@ set mouse=a
 - Eslint 설치
 - Command Palette > Open Keyboard Shortcuts > Replace (`cmd + h`)
 - Command Palette > install 'code' command in PATH
+  - 안될시 `~/.zshrc`에 `code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}`
 
 [Notion 다운로드](https://www.notion.so/desktop/mac/download)
 
