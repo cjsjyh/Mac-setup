@@ -17,7 +17,7 @@ echo "{
 <summary> 수동 </summary>
 
 - `~/Library` 폴더에 `KeyBindings` 폴더를 추가합니다.
-- `~/Library/KeyBindings` 폴더에 `DefaultkeyBinding.dict` 파일을 만듭니다.
+- `~/Library/KeyBindings` 폴더에 `DefaultKeyBinding.dict` 파일을 만듭니다.
 - `DefaultkeyBinding.dict` 파일에 아래의 코드를 추가합니다.
 ```
 {
