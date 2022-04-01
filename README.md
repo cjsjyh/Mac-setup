@@ -55,44 +55,6 @@ plugins=(
 )
 ```
 
-```bash
-echo "
-source ~/.zsh_aliases
-PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info) '
-" | sudo tee -a ~/.zshrc
-
-echo "
-alias desktop="cd ~/Desktop"
-alias download="cd ~/Downloads"
-alias clear='clear && printf "\e[3J"'
-
-alias gs="git status"
-alias gpsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git push --set-upstream origin {}"
-alias gsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git branch --set-upstream-to=origin/{} {}"
-function gbda() {
-    git branch | grep 'junsoo/' | xargs git branch -D
-}
-function gpfo() {
-    git pull origin $1;
-}
-function seeport() {
-    lsof -i tcp:$1;
-}
-" | sudo tee -a ~/.zsh_aliases
-
-echo "
-[alias]
-    co = checkout
-    cp = cherry-pick
-    lp = log --oneline --decorate
-    lpg = log --oneline --decorate --graph
-    rba = rebase --abort
-    rbc = rebase --continue
-    cm = commit -m
-    aa = add --all
-" | sudo tee -a ~/.gitconfig
-```
-
 <details>
 <summary>수동</summary>
  
@@ -113,13 +75,19 @@ PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info) '
 ```
 alias desktop="cd ~/Desktop"
 alias download="cd ~/Downloads"
+alias clear='clear && printf "\e[3J"'vi 
 
 alias gs="git status"
+alias gb="git branch"
 alias gpsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git push --set-upstream origin {}"
+alias gbsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git branch --set-upstream-to=origin/{} {}"
 alias gsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git branch --set-upstream-to=origin/{} {}"
-function gbda() {
-    git branch | grep 'junsoo/' | xargs git branch -D
-}
+alias gbda="git branch | grep 'js/\|junsoo' | xargs -I {} git branch -D {}"
+alias grh="git reset --hard"
+alias grs="git reset --soft HEAD^"
+alias gbd="git branch -D"
+alias grestore="git restore --staged '*'"
+
 function gpfo() {
     git pull origin $1;
 }
@@ -130,6 +98,8 @@ function seeport() {
 
 **`~/.gitconfig`**
 ```
+[pager]
+    branch = false
 [alias]
     co = checkout
     cp = cherry-pick
