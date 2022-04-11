@@ -46,17 +46,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
-**`~/.zshrc`에 추가**
-```
-plugins=(
-  git
-  zsh-syntax-highlighting # 추가됨
-  zsh-autosuggestions # 추가됨
-)
-```
 
-<details>
-<summary>수동</summary>
  
 **`~/.zshrc`**
 ```
@@ -73,9 +63,13 @@ PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info) '
 
 **`~/.zsh_aliases`**
 ```
-alias desktop="cd ~/Desktop"
+lias desktop="cd ~/Desktop"
 alias download="cd ~/Downloads"
-alias clear='clear && printf "\e[3J"'vi 
+alias clear='clear && printf "\e[3J"'
+
+alias bookingweb="cd ~/Desktop/booking-web && nvm use 10"
+alias bizowner="cd ~/Desktop/business-owner && nvm use 16"
+alias mint="cd ~/Desktop/mint && nvm use 10"
 
 alias gs="git status"
 alias gb="git branch"
@@ -110,7 +104,6 @@ function seeport() {
     cm = commit -m
     aa = add --all
 ```
-</details>
 
 [Ultimate Vim 설치](https://github.com/amix/vimrc)
 ```bash
