@@ -63,7 +63,7 @@ PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info) '
 
 **`~/.zsh_aliases`**
 ```
-lias desktop="cd ~/Desktop"
+alias desktop="cd ~/Desktop"
 alias download="cd ~/Downloads"
 alias clear='clear && printf "\e[3J"'
 
