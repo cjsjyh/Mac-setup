@@ -119,7 +119,7 @@ set mouse=a
 - 한글깨짐해결: Preferences > Profiles > Text > Unicode normalization form: `NFC`
 
 ## 필수 프로그램 
-[Visual Studio Code 다운로드](https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal)
+[Visual Studio Code 다운로드](https://code.visualstudio.com/download)
 - Prettier 설치
 - Eslint 설치
 - Git lens 서ㄹ치
