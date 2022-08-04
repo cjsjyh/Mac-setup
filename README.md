@@ -68,7 +68,7 @@ alias download="cd ~/Downloads"
 alias clear='clear && printf "\e[3J"'
 
 alias bookingweb="cd ~/Desktop/booking-web && nvm use 10"
-alias bizowner="cd ~/Desktop/business-owner && nvm use 16"
+alias bizowner="cd ~/Desktop/business-owner && nvm use 14"
 alias mint="cd ~/Desktop/mint && nvm use 10"
 
 alias gs="git status"
@@ -122,7 +122,7 @@ set mouse=a
 [Visual Studio Code 다운로드](https://code.visualstudio.com/download)
 - Prettier 설치
 - Eslint 설치
-- Git lens 서ㄹ치
+- Git lens 설치
 - Command Palette > Open Keyboard Shortcuts > Replace (`cmd + h`)
 - Command Palette > install 'code' command in PATH
   - 안될시 `~/.zshrc`에 `code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}`
@@ -133,7 +133,7 @@ set mouse=a
 
 
 ## Project Setup
-**NVM 설치**
+**NVM 설치** [링크](https://github.com/nvm-sh/nvm)
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
