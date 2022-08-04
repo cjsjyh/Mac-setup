@@ -122,6 +122,7 @@ set mouse=a
 [Visual Studio Code 다운로드](https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal)
 - Prettier 설치
 - Eslint 설치
+- Git lens 서ㄹ치
 - Command Palette > Open Keyboard Shortcuts > Replace (`cmd + h`)
 - Command Palette > install 'code' command in PATH
   - 안될시 `~/.zshrc`에 `code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}`
