@@ -61,6 +61,8 @@ plugins=(
 // 마지막에
 source ~/.zsh_aliases
 PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info) '
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 ```
 
 **`~/.zsh_aliases`**
