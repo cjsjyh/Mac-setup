@@ -151,4 +151,5 @@ npm install --global yarn
 ```
 
 ## Extra
-`brew install fd`
+- `brew install fd`
+- `Safari Technology Preview`
