@@ -135,6 +135,7 @@ set mouse=a
 
 [Zoom 다운르도](https://zoom.us/download#client_4meeting)
 
+[마우스와 트랙패드 반대로](https://mos.caldis.me/)
 
 ## Project Setup
 **NVM 설치** [링크](https://github.com/nvm-sh/nvm)
