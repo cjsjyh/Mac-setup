@@ -71,20 +71,23 @@ alias desktop="cd ~/Desktop"
 alias download="cd ~/Downloads"
 alias clear='clear && printf "\e[3J"'
 
+alias vpn="~/Desktop/vpn/vpn"
+
 alias bookingweb="cd ~/Desktop/booking-web && nvm use 10"
-alias bizowner="cd ~/Desktop/business-owner && nvm use 14"
+alias bizowner="cd ~/Desktop/business-owner && nvm use"
 alias mint="cd ~/Desktop/mint && nvm use 10"
 
 alias gs="git status"
 alias gb="git branch"
 alias gpsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git push --set-upstream origin {}"
-alias gbsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git branch --set-upstream-to=origin/{} {}"
 alias gsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git branch --set-upstream-to=origin/{} {}"
 alias gbda="git branch | grep 'js/\|junsoo' | xargs -I {} git branch -D {}"
 alias grh="git reset --hard"
 alias grs="git reset --soft HEAD^"
 alias gbd="git branch -D"
 alias grestore="git restore --staged '*'"
+alias udt-develop="git fetch origin develop:develop"
+alias udt-main="git fetch origin main:main"
 
 function gpfo() {
     git pull origin $1;
@@ -107,6 +110,7 @@ function seeport() {
     rbc = rebase --continue
     cm = commit -m
     aa = add --all
+    bc = remote prune origin
 ```
 
 [Ultimate Vim 설치](https://github.com/amix/vimrc)
