@@ -70,24 +70,28 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 alias desktop="cd ~/Desktop"
 alias download="cd ~/Downloads"
 alias clear='clear && printf "\e[3J"'
+alias ledger="cd ~/Desktop/sideproject/ledger-book && nvm use"
+alias teslab="cd ~/Desktop/sideproejct/teslab && nvm use"
 
-alias vpn="~/Desktop/vpn/vpn"
+alias kafka-ui="docker run -it -p 8080:8080 -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui""
 
-alias bookingweb="cd ~/Desktop/booking-web && nvm use 10"
-alias bizowner="cd ~/Desktop/business-owner && nvm use"
-alias mint="cd ~/Desktop/mint && nvm use 10"
+alias passion="cd ~/Desktop/shopping/passion-fruit"
 
 alias gs="git status"
 alias gb="git branch"
 alias gpsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git push --set-upstream origin {}"
 alias gsu="git rev-parse --abbrev-ref HEAD | xargs -I {} git branch --set-upstream-to=origin/{} {}"
-alias gbda="git branch | grep 'js/\|junsoo' | xargs -I {} git branch -D {}"
+alias gbda="git branch | grep 'feature/\|feature' | xargs -I {} git branch -D {}"
 alias grh="git reset --hard"
 alias grs="git reset --soft HEAD^"
 alias gbd="git branch -D"
 alias grestore="git restore --staged '*'"
-alias udt-develop="git fetch origin develop:develop"
-alias udt-main="git fetch origin main:main"
+alias gruv="git aa && git cm 'Remove unused vars' && git push"
+alias gapr="git aa && git cm 'PR 리뷰 반영' && git push"
+
+function gfo() {
+    git fetch origin $1:$1
+}
 
 function gpfo() {
     git pull origin $1;
@@ -95,6 +99,24 @@ function gpfo() {
 function seeport() {
     lsof -i tcp:$1;
 }
+
+alias k="kubectl"
+alias kd="k describe" # 특정 리소스 정보를 자세하게 표시합니다.
+alias ke="k edit" # 리소스를 수정합니다. ke {리소스타입} {리소스명}
+alias kg="k get" # 리소스를 조회합니다.
+alias kgp="k get pod -o wide" # Pod을 IP까지 비교적 자세하게 조회합니다.
+alias kgd="kg deploy" # 배포 리소스를 조회합니다.
+alias kgs="kg service" # 서비스 리소스를 조회합니다.
+alias kgi="kg ingress" # 인그레스 리소스를 조회합니다.
+alias kgsec="kg secret" # 시크릿을 조회합니다.
+alias kdp="kd pod" # 특정 pod의 정보를 자세하게 표시합니다.
+alias kdd="kd deploy" # 특정 배포 리소스의 정보를 자세하게 표시합니다.
+alias ar2="ncc cluster set gbo@ar2" # ar2 클러스터로 이동합니다. 스마플의 경우 gbo
+alias cr1="ncc cluster set gbo@cr1" # cr1 클러스터로 이동합니다. 스마플의 경우 gbo
+alias kexec="bash /home1/커버로스_아이디/kexec.sh" # 특정 팟의 특정 컨테이너에 들어가고 싶을때 사용합니다. 아래 `kexec.sh`를 미리 ~/에 저장해두어야합니다.
+
+alias keytab-dev="kinit -kt ~/heimdall/data-cli/config/nch-dev/kerberos/irteam.keytab irteam@GCPKR-DEV.COM"
+alias keytab-prod="kinit -kt ~/heimdall/data-cli/config/nch-real/kerberos/irteam.keytab irteam@GCPKR.COM"
 ```
 
 **`~/.gitconfig`**
