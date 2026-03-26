@@ -73,7 +73,7 @@ alias clear='clear && printf "\e[3J"'
 alias ledger="cd ~/Desktop/sideproject/ledger-book && nvm use"
 alias teslab="cd ~/Desktop/sideproejct/teslab && nvm use"
 
-alias kafka-ui="docker run -it -p 8080:8080 -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui""
+alias kafka-ui="docker run -it -p 8080:8080 -e DYNAMIC_CONFIG_ENABLED=true provectuslabs/kafka-ui"
 
 alias passion="cd ~/Desktop/shopping/passion-fruit"
 
