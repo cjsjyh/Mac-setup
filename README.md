@@ -5,8 +5,31 @@
 - Karabinar
   - Mac내장키보드: [right-command] > [f18]
   - 외장키보드: [right-option] > [f18]
+  - configurations > devices > modify events에서 기기 활성화
 - 키보드 > 단축키 >  입력소스 > 다음 입력 소스 선택(밑에거. 위에는 뗄때 입력됨) >( right-command를 누르면 F18로 설정이 됨)
 - 키보드 > 입력소스 > 한/영키로 ABC 입력소스 전환 해제
+
+```
+// complex modifications - 왼쪽에 fn이 없어서 delete를 left_control + backspace로 매핑
+{
+    "description": "left_control+backspace => delete",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "delete_or_backspace",
+                "modifiers": { "mandatory": ["left_control"] }
+            },
+            "to": [
+                {
+                    "key_code": "delete_forward",
+                    "repeat": true
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
+```
 
 ## 원화로 나오는 것을 (`)로 바꾸기
 ```bash
